@@ -1,4 +1,4 @@
-package ThreeClasses_8_5;
+package Vehicle_Rental;
 import java.util.Scanner;
 
 

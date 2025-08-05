@@ -1,4 +1,4 @@
-package ThreeClasses_8_5;
+package Vehicle_Rental;
 
 public class Vehicle{
     String registrationNumber;
@@ -32,8 +32,8 @@ public class Vehicle{
         + "\n"
         + "\tRegistration Number: " + registrationNumber 
         + "\n\tBrand: " + brand 
-        + "\n\tRental Rate Per Day: " + rentalRatePerDay
-        + "\n\tRental Days: " + rentalDays + "Day(s)"
+        + "\n\tRental Rate Per Day: Php" + rentalRatePerDay
+        + "\n\tRental Days: " + rentalDays + " Day(s)"
         + "\n\tTotal Rental Cost: " + getRN());
 
         System.out.println("\n"
