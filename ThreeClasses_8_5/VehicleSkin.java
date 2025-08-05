@@ -20,7 +20,7 @@ public class VehicleSkin {
         vehicle.setrentalDays(sc.nextDouble());
 
         for (int i = 0; i < 3; i++)
-            try {
+            try {    // Gives the illusion of loading >:])
                 System.out.println("\rProcessing..");
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
