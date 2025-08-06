@@ -18,6 +18,7 @@ public class VehicleSkin {
 
         System.out.print("How many days will you rent this car?: ");
         vehicle.setrentalDays(sc.nextDouble());
+        sc.close();
 
         for (int i = 0; i < 3; i++)
             try {
@@ -28,8 +29,7 @@ public class VehicleSkin {
             }
 
         vehicle.displayInfo();
-        sc.close();
-
+        
 
     }
 }
