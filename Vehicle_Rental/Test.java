@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Test {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try(Scanner scanner = new Scanner(System.in)) {
 
         System.out.print("Input hours: ");
         int hours = scanner.nextShort();
@@ -24,5 +24,6 @@ public class Test {
         System.out.println("Total hours: " + totalHours);
 
         scanner.close();
+        }
     }
 }

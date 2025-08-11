@@ -6,8 +6,8 @@ public class Vehicle{
     double rentalRatePerDay;
     double rentalDays;
     
-    public void setRegistration(String _RN){
-        registrationNumber = _RN;
+    public void setRegistration(String RN){
+        registrationNumber = RN;
     }
 
     public void setBrand(String comp){
@@ -18,8 +18,8 @@ public class Vehicle{
         rentalRatePerDay = rrd;
     }
 
-    public void setrentalDays(double _RD){
-        rentalDays = _RD;
+    public void setrentalDays(double RD){
+        rentalDays = RD;
     }
 
     public double getRN(){
@@ -30,13 +30,16 @@ public class Vehicle{
     public void displayInfo(){
         System.out.println("Order Confirmation:"
         + "\n"
-        + "\tRegistration Number: " + registrationNumber 
+        + "\n\tRegistration Number: " + registrationNumber 
         + "\n\tBrand: " + brand 
-        + "\n\tRental Rate Per Day: Php" + rentalRatePerDay
+        + "\n\tRental Rate Per Day: Php " + rentalRatePerDay
         + "\n\tRental Days: " + rentalDays + " Day(s)"
+        + "\n"
         + "\n\tTotal Rental Cost: " + getRN());
 
-        System.out.println("\n"
-        + "Thank you for your order!");
+        System.out.println(
+        "\n"
+        + "Thank you for your order!"
+        +"\n");
     }
 }

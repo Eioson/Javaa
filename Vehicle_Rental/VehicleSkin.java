@@ -1,10 +1,9 @@
-package Vehicle_Rental;
+package Vehicle_Rental; //Note: Send the github files for the package folder to the programming discussion thing at 1600 hours or earlier
 import java.util.Scanner;
-
 
 public class VehicleSkin {
     public static void main(String[] sigma) {
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)) {
         Vehicle vehicle = new Vehicle();
         
         System.out.print("What is your registration number?: ");
@@ -30,6 +29,6 @@ public class VehicleSkin {
 
         vehicle.displayInfo();
         
-
+        }
     }
 }
