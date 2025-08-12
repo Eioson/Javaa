@@ -19,13 +19,14 @@ public class VehicleSkin {
         vehicle.setrentalDays(sc.nextDouble());
         sc.close();
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++){
             try {
                 System.out.println("\rProcessing..");
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt(); // Restore interrupted status
             }
+        }
 
         vehicle.displayInfo();
         
