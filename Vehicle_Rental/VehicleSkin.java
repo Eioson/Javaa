@@ -6,6 +6,18 @@ public class VehicleSkin {
         try(Scanner sc = new Scanner(System.in)) {
         Vehicle vehicle = new Vehicle();
         
+        System.out.print("What is your ID number?: ");
+        vehicle.setCID(sc.nextLong());
+
+        System.out.print("What is your first name?: ");
+        vehicle.setCFN(sc.nextLine());
+
+        System.out.print("What is your last name?: ");
+        vehicle.setCLN(sc.nextLine());
+
+        System.out.print("What is your email?: ");
+        vehicle.setMail(sc.nextLine());
+
         System.out.print("What is your registration number?: ");
         vehicle.setRegistration(sc.nextLine());
         
@@ -31,5 +43,6 @@ public class VehicleSkin {
         vehicle.displayInfo();
         
         }
+
     }
 }
